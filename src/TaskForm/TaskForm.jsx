@@ -14,6 +14,8 @@ const TaskForm = ({ task, onSave }) => {
         <input
           type="text"
           value={title}
+          autoFocus
+          pattern='[A-Za-z0-9 ]{3,50}'
           onChange={(e) => setTitle(e.target.value)}
           placeholder="Título"
           className="border p-2 w-full"

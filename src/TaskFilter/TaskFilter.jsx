@@ -9,7 +9,7 @@ const TaskFilter = ({ filter, onFilterChange }) => {
         // Cuando se hace clic, se cambia el filtro a 'all' (todas las tareas)
         onClick={() => onFilterChange('all')} 
         // Condicional para aplicar un estilo destacado si el filtro actual es 'all'
-        className={filter === 'all' ? 'bg-blue-500 text-white' : ''}
+        className={filter === 'all' ? 'bg-blue-500 text-black' : ''}
       >
         Todas
       </button>
